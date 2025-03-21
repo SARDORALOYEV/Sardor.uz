@@ -30,6 +30,8 @@ const sidebar = document.getElementById("sidebar");
         "ism": { en: "Name", uz: "Ism" },
         "email":{en:"Email",uz:"E-pochta"},
         "xabar":{en:"Description",uz:"Xabar"},
+        "request":{en:"Send a request", uz:"So'rov Jo'natish"},
+        "submit":{en:"Send", uz:"Jo'natish"},
         "tel": { en: "Phone Number", uz: "Telefon" },
         "map": { en: "Location", uz: "Joylashuv" },
         "telegram": { en: "Telegram", uz: "Telegram" },
