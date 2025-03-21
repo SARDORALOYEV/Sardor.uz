@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="text-white">
+    <div class="sidebar-overlay"></div>
+    <header class="flex justify-between items-center px-5 py-4 border-b border-gray-600 w-full">
+        <div class="flex items-center gap-5">
+            <button id="menu" class="text-white text-2xl "><i class="fa-solid fa-bars"></i></button>
+            <p class="text-xl font-bold">SARDOR.<span class="text-green-400">UZ</span></p>
+        </div>
+        <nav class="navbar hidden gap-[30px] lg:flex">
+            <a href="./index.html" class="nav-link hover:text-green-200" data-key="home">Home</a>
+            <a href="./about.html" class="nav-link hover:text-green-200" data-key="about">About</a>
+            <a href="./projects.html" class="nav-link hover:text-green-200" data-key="projects">Projects</a>
+            <a href="./contact.html" class="nav-link hover:text-green-200" data-key="contact">Contact</a>
+        </nav>
+        <div class="flex gap-5 items-center">
+            <a href="https://github.com/SARDORALOYEV" class=" nav-link hover:text-green-400"><i
+                    class="fa-brands fa-github text-white hover:text-[var(--main-clr)] fa-2xl mx-3"></i></a>
+            <button id="langBtn" class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-md">
+                <i class="fa-solid fa-language hidden sm:flex"></i>
+                <img id="selectedFlag"
+                    src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA Flag"
+                    class="w-6 h-4">
+                <span id="selectedLang" class="sm:text-[16px]">English</span>
+            </button>
+        </div>
+    </header>
+    <aside class="sidebar p-5 text-white" id="sidebar">
+        <button id="closeSidebar" class="bg-red-500 w-full h-[50px] py-2 rounded-lg mb-4">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Profil rasmi -->
+        <div class="flex justify-center">
+            <img src="https://sardoraloyev.github.io/FIRST-PORTFOLIO/images/my.jpg"
+                class=" w-full rounded-tr-3xl rounded rounded-bl-3xl   border-2 border-green-400">
+        </div>
+
+        <!-- Ism va kasb -->
+        <h2 class="text-center text-xl font-semibold mt-3">A’loyev Sardor</h2>
+        <p class="text-center text-sm text-gray-400" data-key="profession">Web Developer | Designer</p>
+
+        <!-- Tajriba yoki Rollar -->
+        <div class="flex flex-wrap justify-center gap-2 mt-3">
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs" data-key="frontend">Frontend</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs" data-key="uiux">UI/UX</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs" data-key="freelancer">Freelancer</span>
+        </div>
+
+        <!-- Ijtimoiy tarmoqlar -->
+        <div class="mt-5">
+            <p class="text-sm font-semibold" data-key="email">E-pochta</p>
+            <a href="mailto:aloyevsardor30@gmail.com" class="text-green-400 text-xs">aloyevsardor30@gmail.com</a>
+
+            <p class="text-sm font-semibold mt-3" data-key="github">GitHub</p>
+            <a href="https://github.com/SARDORALOYEV" class="text-green-400 text-xs">github.com/SARDORALOYEV</a>
+
+            <p class="text-sm font-semibold mt-3" data-key="telegram">Telegram</p>
+            <a href="https://t.me/Oke07n" class="text-green-400 text-xs">t.me/@Oke07n</a>
+
+            <p class="text-sm font-semibold mt-3" data-key="phone">Telefon</p>
+            <p class="text-xs text-gray-400">+998 (50) 552-98-16</p>
+        </div>
+    </aside>
+    <main class="container w-full mx-auto p-4 max-w-[80rem]">
+        <section class="max-w-full w-full text-left flex flex-col gap-4 lg:mt-0 mt-4 lg:pl-0">
+            <h1 class="text-white text-left text-3xl font-bold title" data-key="contact">Contact</h1>
+            <div class="w-40 transition-all duration-300 bg-[var(--main-clr)] h-2 rounded-xl title"></div>
+        
+            <!-- Kontakt kartochkalari -->
+            <ul class="flex justify-between flex-col lg:flex-row items-center gap-[30px] mt-6">
+                <!-- E-pochta -->
+                <li class="bg-[#1a1a1a] p-6 rounded-lg text-center shadow-lg lg:w-80 w-full ">
+                    <div class="flex items-center justify-center size-16 rounded-md sm:size-20 sm:rounded-lg mx-auto"
+                        style="background: linear-gradient(135deg, rgba(66, 134, 244, 0.25) 15%, rgba(234, 68, 53, 0.25) 35%, rgba(251, 188, 5, 0.25) 65%, rgba(52, 168, 83, 0.25));">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" class="w-10 h-10">
+                    </div>
+                    <h3 class="text-white text-xl font-semibold mt-3" data-key="email">E-pochta</h3>
+                    <p class="text-gray-400">info@yaxyobekk.uz</p>
+                </li>
+        
+                <!-- Telefon raqam -->
+                <li class="bg-[#1a1a1a] p-6 rounded-lg text-center shadow-lg lg:w-80 w-full ">
+                    <div class="flex items-center justify-center size-16 rounded-md sm:size-20 sm:rounded-lg mx-auto"
+                        style="background: rgba(0, 224, 108, 0.19)">
+                        <svg width="40" height="40" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="phone 1">
+                              <path id="Vector" d="M0.604464 5.36627C0.499144 7.19956 0.832652 9.02238 1.57226 10.8348C2.31186 12.6471 3.39226 14.264 4.81346 15.6852C6.23468 17.1063 7.85144 18.1867 9.66379 18.9263C11.4763 19.666 13.299 19.9893 15.1324 19.8961L15.0665 15.756C12.2985 15.756 9.93579 14.7773 7.9785 12.82C6.02126 10.8627 5.04259 8.50009 5.04259 5.73207L0.604464 5.36627Z" fill="url(#paint0_linear_42_6241)"/>
+                              <path id="Vector_2" d="M15.1351 19.9117C17.4978 19.9117 19.4131 17.9964 19.4131 15.6336C19.4131 13.2709 17.4978 11.3556 15.1351 11.3556C12.7723 11.3556 10.8569 13.2709 10.8569 15.6336C10.8569 17.9964 12.7723 19.9117 15.1351 19.9117Z" fill="url(#paint1_radial_42_6241)"/>
+                              <path id="Vector_3" d="M4.86743 9.64443C7.23015 9.64443 9.1455 7.72902 9.1455 5.36633C9.1455 3.00362 7.23015 1.08826 4.86743 1.08826C2.50471 1.08826 0.589355 3.00362 0.589355 5.36633C0.589355 7.72902 2.50471 9.64443 4.86743 9.64443Z" fill="url(#paint2_radial_42_6241)"/>
+                            </g>
+                            <defs>
+                              <linearGradient id="paint0_linear_42_6241" x1="7.85891" y1="5.36627" x2="7.85891" y2="19.9117" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00EE7A"/>
+                                <stop offset="1" stop-color="#00C853"/>
+                              </linearGradient>
+                              <radialGradient id="paint1_radial_42_6241" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13.7689 13.211) rotate(78.4769) scale(6.83853 6.83853)">
+                                <stop stop-color="#00EE7A"/>
+                                <stop offset="1" stop-color="#00C853"/>
+                              </radialGradient>
+                              <radialGradient id="paint2_radial_42_6241" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(3.50134 2.9437) rotate(78.4769) scale(6.83853)">
+                                <stop stop-color="#00EE7A"/>
+                                <stop offset="1" stop-color="#00C853"/>
+                              </radialGradient>
+                            </defs>
+                          </svg>                          
+                    </div>
+                    <h3 class="text-white text-xl font-semibold mt-3" data-key="tel">Telefon</h3>
+                    <p class="text-gray-400">+998505529816</p>
+                </li>
+        
+                <!-- Manzil -->
+                <li class="bg-[#1a1a1a] p-6 rounded-lg text-center shadow-lg lg:w-80 w-full ">
+                    <div class="flex items-center justify-center size-16 rounded-md sm:size-20 sm:rounded-lg mx-auto"
+                        style="background:rgba(251, 188, 5, 0.19)">
+                        <svg width="40" height="40" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.99756 0.622559C6.20801 0.622559 3.12378 3.70802 3.12378 7.49756C3.12378 14.1655 9.6106 19.2346 9.6106 19.2346C9.83848 19.4161 10.1615 19.4161 10.3894 19.2346C10.3894 19.2346 16.8775 14.1655 16.8774 7.49756C16.8774 3.70802 13.7871 0.622559 9.99756 0.622559ZM9.99756 4.37378C11.716 4.37378 13.1262 5.77908 13.1262 7.49756C13.1262 9.21606 11.7161 10.625 9.99756 10.625C8.27906 10.625 6.87377 9.21606 6.87378 7.49756C6.87378 5.77908 8.27908 4.37378 9.99756 4.37378Z" fill="#FBBC05"/>
+                          </svg>                          
+                    </div>
+                    <h3 class="text-white text-xl font-semibold mt-3" data-key="map">Location</h3>
+                    <p class="text-gray-400">Uzbekistan , Tashkent</p>
+                </li>
+            </ul>
+        </section>
+
+        <h1 class="text-white text-3xl font-bold title pt-10 pb-5 title" data-key="request">Send a request</h1>
+            <div class="w-40 transition-all duration-300 bg-[var(--main-clr)] h-2 rounded-xl title mb-6"></div>
+            <div class="w-full p-8 bg-gray-900 rounded-lg shadow-lg lg:mb-0 mb-[60px]">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="userName" class="block text-sm font-medium text-white"><p data-key="Ism"></p></label>
+                        <input type="text" id="userName" placeholder="Your name"
+                            class="w-full mt-1 p-5 rounded-md bg-gray-800 text-white focus:ring-2 focus:ring-green-500 outline-none sm:placeholder:text-[16px] ">
+                    </div>
+        
+                    <div>
+                        <label for="userEmail" class="block text-sm font-medium text-white" ><p data-key="email"></p></label>
+                        <input type="email" id="userEmail" placeholder="Email"
+                            class="w-full mt-1 p-5 rounded-md bg-gray-800 text-white focus:ring-2 focus:ring-green-500 outline-none sm:placeholder:text-[16px] ">
+                    </div>
+                </div>
+        
+                <div class="mt-4">
+                    <label for="userMessage" class="block text-sm font-medium text-white" ><p data-key="xabar"></p></label>
+                    <textarea id="userMessage" placeholder="Your message"
+                        class="w-full mt-1 p-5 rounded-md bg-gray-800 text-white focus:ring-2 focus:ring-green-500 outline-none h-32 min-h-[100px]"></textarea>
+                </div>
+        
+                <button id="submitBtn"
+                    class="w-32 mt-4 bg-green-600 hover:bg-green-700 transition p-3 rounded-md text-white font-semibold">
+                    Submit
+                </button>
+            </div>
+    
+        
+      
+    </main>    
+    <nav
+    class="flex items-center fixed bottom-0 inset-x-0 h-14 bg-gray-800 px-3.5 border-t-2 border-dark-200 sm:px-4 lg:hidden">
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between gap-7 w-full">
+            <a href="./index.html" class="nav-link flex flex-col items-center group">
+                <i class="fa-solid fa-home group-hover:text-green-200"></i>
+                <div class="group-hover:text-green-200" data-key="home">Home</div>
+            </a>
+            <a href="./about.html" class="nav-link flex flex-col items-center group">
+                <i class="fa-solid fa-user group-hover:text-green-200"></i>
+                <div class="group-hover:text-green-200" data-key="about">About</div>
+            </a>
+            <a href="./projects.html" class="nav-link flex flex-col items-center group">
+                <i class="fa-solid fa-folder group-hover:text-green-200"></i>
+                <div class="group-hover:text-green-200" data-key="projects">Projects</div>
+            </a>
+            <a href="./contact.html" class="nav-link flex flex-col items-center group">
+                <i class="fa-solid fa-envelope group-hover:text-green-200"></i>
+                <div class="group-hover:text-green-200" data-key="contact">Contact</div>
+            </a>
+        </div>
+    </div>
+</nav>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

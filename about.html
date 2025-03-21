@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="text-white">
+    <div class="sidebar-overlay"></div>
+    <header class="flex justify-between items-center px-5 py-4 border-b border-gray-600 w-full">
+        <div class="flex items-center gap-5">
+            <button id="menu" class=" text-white text-2xl "><i class="fa-solid fa-bars"></i></button>
+            <p class="text-xl font-bold">SARDOR.<span class="text-green-400">UZ</span></p>
+        </div>
+        <nav class="navbar hidden gap-[30px] lg:flex">
+            <a href="./index.html" class="nav-link hover:text-green-200" data-key="home">Home</a>
+            <a href="./about.html" class="nav-link hover:text-green-200" data-key="about">About</a>
+            <a href="./projects.html" class="nav-link hover:text-green-200" data-key="projects">Projects</a>
+            <a href="./contact.html" class="nav-link hover:text-green-200" data-key="contact">Contact</a>
+        </nav>
+        <div class="flex gap-5 items-center">
+            <a href="https://github.com/SARDORALOYEV class=" nav-link hover:text-green-400"><i
+                    class="fa-brands fa-github text-white hover:text-[var(--main-clr)] fa-2xl mx-3"></i></a>
+            <button id="langBtn" class="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-md">
+                <i class="fa-solid fa-language hidden sm:flex"></i>
+                <img id="selectedFlag"
+                    src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA Flag"
+                    class="w-6 h-4">
+                <span id="selectedLang" class="sm:text-[16px]">English</span>
+            </button>
+        </div>
+    </header>
+    <aside class="sidebar p-5 text-white" id="sidebar">
+        <button id="closeSidebar" class="bg-red-500 w-full h-[50px] py-2 rounded-lg mb-4">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Profil rasmi -->
+        <div class="flex justify-center">
+            <img src="https://sardoraloyev.github.io/FIRST-PORTFOLIO/images/my.jpg"
+                class=" w-full rounded-tr-3xl rounded rounded-bl-3xl   border-2 border-green-400">
+        </div>
+
+        <!-- Ism va kasb -->
+        <h2 class="text-center text-xl font-semibold mt-3">A’loyev Sardor</h2>
+        <p class="text-center text-sm text-gray-400" data-key="profession">Web Developer | Designer</p>
+
+        <!-- Tajriba yoki Rollar -->
+        <div class="flex flex-wrap justify-center gap-2 mt-3">
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs" data-key="frontend">Frontend</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs" data-key="uiux">UI/UX</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs" data-key="freelancer">Freelancer</span>
+        </div>
+
+        <!-- Ijtimoiy tarmoqlar -->
+        <div class="mt-5">
+            <p class="text-sm font-semibold" data-key="email">E-pochta</p>
+            <a href="mailto:aloyevsardor30@gmail.com" class="text-green-400 text-xs">aloyevsardor30@gmail.com</a>
+
+            <p class="text-sm font-semibold mt-3" data-key="github">GitHub</p>
+            <a href="https://github.com/SARDORALOYEV" class="text-green-400 text-xs">github.com/SARDORALOYEV</a>
+
+            <p class="text-sm font-semibold mt-3" data-key="telegram">Telegram</p>
+            <a href="https://t.me/Oke07n" class="text-green-400 text-xs">t.me/@Oke07n</a>
+
+            <p class="text-sm font-semibold mt-3" data-key="phone">Telefon</p>
+            <p class="text-xs text-gray-400">+998 (50) 552-98-16</p>
+        </div>
+    </aside>
+    <main class="container w-full mx-auto p-4 max-w-[80rem]">
+        <section class="max-w-full w-full text-left flex flex-col gap-8 lg:mt-8 mt-4 lg:pl-8 pl-0">
+            <h1 class="text-white text-left text-3xl font-bold title" data-key="aboutBtn">About me</h1>
+            <div class="w-40 transition-all duration-300 bg-[var(--main-clr)] h-2 rounded-xl title"></div>
+            <p class="text-left text-white pb-7 text-lg title" data-key="abouttitle"></p>
+
+            <a href="./projects.html"> 
+                <button class="mt-6 group px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all flex items-center gap-2">
+                    <p data-key="projects"></p>
+                    <i class="fa-solid fa-arrow-right group-hover:pl-3 transition-all"></i>
+                </button>
+            </a>
+        </section>
+        <section class="max-w-full w-full text-left flex flex-col gap-8 mt-8 lg:pl-8 pl-0">
+            <h1 class="text-white text-left text-3xl font-bold title" data-key="texno"></h1>
+            <div class="w-40 transition-all duration-300 bg-[var(--main-clr)] h-2 rounded-xl title"></div>
+            <ul class="flex flex-wrap gap-1 justify-center">
+                <li
+                    class="w-[300px] h-[150px] bg-[#1B1B1B] p-6 rounded-lg flex justify-center items-center shadow-md border-[1px] border-[#000] hover:border-[var(--main-clr)] transition relative group">
+                    <img src="./images/html-5 1.svg" alt="HTML" class="w-16 h-16 group-hover:hidden">
+                    <p
+                        class="text-white text-xl font-bold absolute opacity-0 group-hover:opacity-100 transition-opacity">
+                        HTML</p>
+                </li>
+                <li
+                    class="w-[300px] h-[150px] bg-[#1B1B1B] p-6 rounded-lg flex justify-center items-center shadow-md border-[1px] border-[#000] hover:border-[var(--main-clr)] transition relative group">
+                    <img src="./images/css 1.svg" alt="CSS" class="w-16 h-16 group-hover:hidden">
+                    <p
+                        class="text-white text-xl font-bold absolute opacity-0 group-hover:opacity-100 transition-opacity">
+                        CSS</p>
+                </li>
+                <li
+                    class="w-[300px] h-[150px] bg-[#1B1B1B] p-6 rounded-lg flex justify-center items-center shadow-md border-[1px] border-[#000] hover:border-[var(--main-clr)] transition relative group">
+                    <img src="./images/js 1.svg" alt="JavaScript" class="w-16 h-16 group-hover:hidden">
+                    <p
+                        class="text-white text-xl font-bold absolute opacity-0 group-hover:opacity-100 transition-opacity">
+                        JS</p>
+                </li>
+                <li
+                    class="w-[300px] h-[150px] bg-[#1B1B1B] p-6 rounded-lg flex justify-center items-center shadow-md border-[1px] border-[#000] hover:border-[var(--main-clr)] transition relative group">
+                    <img src="./images/react 1.svg" alt="React" class="w-16 h-16 group-hover:hidden">
+                    <p
+                        class="text-white text-xl font-bold absolute opacity-0 group-hover:opacity-100 transition-opacity">
+                        React</p>
+                </li>
+                <li
+                    class="w-[300px] h-[150px] bg-[#1B1B1B] p-6 rounded-lg flex justify-center items-center shadow-md border-[1px] border-[#000] hover:border-[var(--main-clr)] transition relative group">
+                    <img src="./images/tailwind 1.svg" alt="Tailwind" class="w-16 h-16 group-hover:hidden">
+                    <p
+                        class="text-white text-xl font-bold absolute opacity-0 group-hover:opacity-100 transition-opacity">
+                        Tailwind CSS</p>
+                </li>
+                <li
+                    class="w-[300px] h-[150px] bg-[#1B1B1B] p-6 rounded-lg flex justify-center items-center shadow-md border-[1px] border-[#000] hover:border-[var(--main-clr)] transition relative group">
+                    <img src="./images/figma 1.svg" alt="Figma" class="w-16 h-16 group-hover:hidden">
+                    <p
+                        class="text-white text-xl font-bold absolute opacity-0 group-hover:opacity-100 transition-opacity">
+                        Figma</p>
+                </li>
+                <li
+                    class="w-[300px] h-[150px] bg-[#1B1B1B] p-6 rounded-lg flex justify-center items-center shadow-md border-[1px] border-[#000] hover:border-[var(--main-clr)] transition relative group">
+                    <img src="./images/swiper-logo 1.svg" alt="Swiper" class="w-16 h-16 group-hover:hidden">
+                    <p
+                        class="text-white text-xl font-bold absolute opacity-0 group-hover:opacity-100 transition-opacity">
+                        Swiper</p>
+                </li>
+                <li
+                    class="w-[300px] h-[150px] bg-[#1B1B1B] p-6 rounded-lg flex justify-center items-center shadow-md border-[1px] border-[#000] hover:border-[var(--main-clr)] transition relative group">
+                    <img src="./images/KDpgvguMpGfqaHPjicRK 1.svg" alt="Other" class="w-16 h-16 group-hover:hidden">
+                    <p
+                        class="text-white text-xl font-bold absolute opacity-0 group-hover:opacity-100 transition-opacity">
+                        ANTD</p>
+                </li>
+            </ul>
+
+        </section>
+        <section class="max-w-full w-full text-left flex flex-col gap-8 mt-8 pl-8">
+            <h1 class="text-white text-left text-3xl font-bold title" data-key="mennima"></h1>
+            <div class="w-40 transition-all duration-300 bg-[var(--main-clr)] h-2 rounded-xl title"></div>
+            <ul class="flex flex-wrap gap-4 justify-center">
+                <li
+                    class="max-w-[600px] w-full bg-[#1B1B1B] p-6 rounded-lg flex justify-left items-center shadow-md border-[#000] border-[1px] hover:border-[var(--main-clr)]">
+                    <div class="min-w-16 h-16 flex justify-center items-center p-1 rounded bg-[#5CB0FF] bg-opacity-25">
+                        <img src="./images/web-search 1.svg" alt="SEO Optimization" class="w-full h-full">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-white font-bold" data-key="seotitle"></h3>
+                        <p class="text-gray-400 text-sm" data-key="seotext"></p>
+                    </div>
+                </li>
+                <li
+                    class="max-w-[600px] w-full bg-[#1B1B1B] p-6 rounded-lg flex justify-left items-center shadow-md border-[#000] border-[1px] hover:border-[var(--main-clr)]">
+                    <div
+                        class="min-w-16 h-16 flex justify-center items-center p-1 rounded bg-[#FF507D] bg-opacity-25                      ">
+                        <img src="./images/pen-tool-graphic-design 1.svg" alt="Strong Design" class="w-full h-full">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-white font-bold" data-key="strongtitle"></h3>
+                        <p class="text-gray-400 text-sm" data-key="strongtext"></p>
+                    </div>
+                </li>
+                <li
+                    class="max-w-[600px] w-full bg-[#1B1B1B] p-6 rounded-lg flex justify-left items-center shadow-md border-[#000] border-[1px] hover:border-[var(--main-clr)]">
+                    <div
+                        class="min-w-16 h-16 flex justify-center items-center p-1 rounded bg-[#A5EAD6] bg-opacity-25                      ">
+                        <img src="./images/diamond 1.svg" alt="High-Quality Development" class="w-full h-full">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-white font-bold" data-key="qualitytitle"></h3>
+                        <p class="text-gray-400 text-sm" data-key="qualitytext"></p>
+                    </div>
+                </li>
+                <li
+                    class="max-w-[600px] w-full bg-[#1B1B1B] p-6 rounded-lg flex justify-left items-center shadow-md border-[#000] border-[1px] hover:border-[var(--main-clr)] lg:mb-[0px] mb-[100px]">
+                    <div
+                        class="min-w-16 h-16 flex justify-center items-center p-1 rounded bg-[#00EE7A] bg-opacity-25                      ">
+                        <img src="./images/time 1.svg" alt="Efficiency" class="w-full h-full">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-white font-bold" data-key="efficiencytitle"></h3>
+                        <p class="text-gray-400 text-sm" data-key="efficiencytext"></p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+    <nav
+        class="flex items-center fixed bottom-0 inset-x-0 h-14 bg-gray-800 px-3.5 border-t-2 border-dark-200 sm:px-4 lg:hidden">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between gap-7 w-full">
+                <a href="./index.html" class="nav-link flex flex-col items-center group">
+                    <i class="fa-solid fa-home group-hover:text-green-200"></i>
+                    <div class="group-hover:text-green-200" data-key="home">Home</div>
+                </a>
+                <a href="./about.html" class="nav-link flex flex-col items-center group">
+                    <i class="fa-solid fa-user group-hover:text-green-200"></i>
+                    <div class="group-hover:text-green-200" data-key="about">About</div>
+                </a>
+                <a href="./projects.html" class="nav-link flex flex-col items-center group">
+                    <i class="fa-solid fa-folder group-hover:text-green-200"></i>
+                    <div class="group-hover:text-green-200" data-key="projects">Projects</div>
+                </a>
+                <a href="./contact.html" class="nav-link flex flex-col items-center group">
+                    <i class="fa-solid fa-envelope group-hover:text-green-200"></i>
+                    <div class="group-hover:text-green-200" data-key="contact">Contact</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script src="./main.js"></script>
+</body>
+</html>
