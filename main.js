@@ -235,6 +235,15 @@ const sidebar = document.getElementById("sidebar");
                 technologies: ["JavaScript", "LocalStorage", "Movies" , "API", "TailwindCSS"],
                 github: "https://github.com/SARDORALOYEV",
                 live: "https://sardoraloyev.github.io/2-oy-exam-movies/"
+            },
+            {
+                id: 7,
+                name: "Weather App",
+                image: "./images/weather.png",
+                description: "Every country weather",
+                technologies: ["JavaScript", "LocalStorage", "Weather" , "API", "TailwindCSS"],
+                github: "https://github.com/SARDORALOYEV",
+                live: "https://sardoraloyev.github.io/10-weatherapp/"
             }
         ];
         
