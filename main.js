@@ -225,7 +225,7 @@ const sidebar = document.getElementById("sidebar");
                 description: "All Countries of the World",
                 technologies: ["HTML", "CSS", "JavaScript", "API" , "Flags", "Countries"],
                 github: "https://github.com/SARDORALOYEV",
-                live: "https://sardoraloyev.github.io/All-flags/"
+                live: "https://sardoraloyev.github.io/All-Flags/"
             },
             {
                 id: 6,
