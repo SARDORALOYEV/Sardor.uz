@@ -254,6 +254,15 @@ const sidebar = document.getElementById("sidebar");
                 github: "https://github.com/SARDORALOYEV",
                 live: "https://sardoraloyev.github.io/SimplePortfolio/"
             },
+            {
+                id: 9,
+                name: "Konstify",
+                image: "./images/konsta.png",
+                description: "Konstify for KONSTA SINGER",
+                technologies: ["React", "TailwindCSS", "MUSIC"],
+                github: "https://github.com/SARDORALOYEV",
+                live: "https://9-konstify.vercel.app/"
+            },
         ];
         
         document.addEventListener("DOMContentLoaded", () => {
