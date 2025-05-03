@@ -257,7 +257,7 @@ const sidebar = document.getElementById("sidebar");
             {
                 id: 9,
                 name: "Konstify",
-                image: "./images/konsta.png",
+                image: "./images/konsta.jpg",
                 description: "Konstify for KONSTA SINGER",
                 technologies: ["React", "TailwindCSS", "MUSIC"],
                 github: "https://github.com/SARDORALOYEV",
