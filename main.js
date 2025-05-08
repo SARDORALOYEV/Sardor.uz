@@ -263,6 +263,15 @@ const sidebar = document.getElementById("sidebar");
                 github: "https://github.com/SARDORALOYEV",
                 live: "https://9-konstify.vercel.app/"
             },
+            {
+                id: 10,
+                name: "Cinemas trailer",
+                image: "./images/trailer.png",
+                description: "Cinemas trailer",
+                technologies: ["HTML", "TailwindCSS", "CSS", "JavaScript"],
+                github: "https://github.com/SARDORALOYEV",
+                live: "https://sardoraloyev.github.io/cinema/"
+            },
         ];
         
         document.addEventListener("DOMContentLoaded", () => {
