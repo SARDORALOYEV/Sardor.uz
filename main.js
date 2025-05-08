@@ -272,6 +272,15 @@ const sidebar = document.getElementById("sidebar");
                 github: "https://github.com/SARDORALOYEV",
                 live: "https://sardoraloyev.github.io/cinema/"
             },
+            {
+                id: 11,
+                name: "Lamborghini",
+                image: "./images/lamborghini.jpg",
+                description: "Lamborghini Shop website",
+                technologies: ["HTML", "CSS", "Uiverse.io", "API" , "JavaScript", "TELEGRAM"],
+                github: "https://github.com/SARDORALOYEV",
+                live: "https://sardoraloyev.github.io/LamboShop/"
+            },
         ];
         
         document.addEventListener("DOMContentLoaded", () => {
