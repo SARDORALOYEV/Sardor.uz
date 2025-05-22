@@ -281,6 +281,15 @@ const sidebar = document.getElementById("sidebar");
                 github: "https://github.com/SARDORALOYEV",
                 live: "https://sardoraloyev.github.io/LamboShop/"
             },
+            {
+                id: 12,
+                name: "FOODI",
+                image: "./images/foodi.png",
+                description: "Foodi website about foods",
+                technologies: ["HTML", "TailwindCSS", "React" , "SPA"],
+                github: "https://github.com/SARDORALOYEV",
+                live: "https://react-food-six-kappa.vercel.app/"
+            },
         ];
         
         document.addEventListener("DOMContentLoaded", () => {
