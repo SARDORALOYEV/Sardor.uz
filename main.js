@@ -290,6 +290,15 @@ const sidebar = document.getElementById("sidebar");
                 github: "https://github.com/SARDORALOYEV",
                 live: "https://react-food-six-kappa.vercel.app/"
             },
+            {
+                id: 13,
+                name: "1C",
+                image: "./images/1C.png",
+                description: "сервиса 1С-Товары",
+                technologies: [ "TailwindCSS", "React"],
+                github: "https://1c-by-sardor.vercel.app/",
+                live: "https://1c-by-sardor.vercel.app/"
+            },
         ];
         
         document.addEventListener("DOMContentLoaded", () => {
