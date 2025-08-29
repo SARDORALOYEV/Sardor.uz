@@ -299,6 +299,15 @@ const sidebar = document.getElementById("sidebar");
                 github: "https://1c-by-sardor.vercel.app/",
                 live: "https://1c-by-sardor.vercel.app/"
             },
+            {
+                id: 14,
+                name: "Ipak yoli",
+                image: "./images/ipakyol.png",
+                description: "сервиса 1С-Товары",
+                technologies: [ "Real Project", "Tilda" , "i18js"],
+                github: "https://ipak-yol.uz",
+                live: "https://ipak-yol.uz"
+            },
         ];
         
         document.addEventListener("DOMContentLoaded", () => {
