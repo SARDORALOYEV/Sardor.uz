@@ -303,10 +303,19 @@ const sidebar = document.getElementById("sidebar");
                 id: 14,
                 name: "Ipak yoli",
                 image: "./images/ipakyol.png",
-                description: "сервиса 1С-Товары",
+                description: "Ipak yoli wi-fi router ",
                 technologies: [ "Real Project", "Tilda" , "i18js"],
                 github: "https://ipak-yol.uz",
                 live: "https://ipak-yol.uz"
+            },
+            {
+                id: 15,
+                name: "Pizzashop",
+                image: "./images/pizzashop.png",
+                description: "The best pizza shop in town",
+                technologies: [ "TailwindCSS", "React" , "SPA" , "Store"],
+                github: "https://pizzashop-inky.vercel.app/",
+                live: "https://pizzashop-inky.vercel.app/"
             },
         ];
         
